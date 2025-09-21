@@ -1,4 +1,4 @@
-import path, { resolve } from "path";
+import path from "path";
 import * as vscode from "vscode";
 import { getParentFolderUri } from "./utils";
 import Options from "./const";
@@ -8,9 +8,6 @@ type LanguageEnum = keyof typeof Options;
 async function init(uri: vscode.Uri, type: LanguageEnum, context: vscode.ExtensionContext) {
 
   const fileName = await vscode.window.showInputBox({});
-  const t = Options[type];
-
-
   const fileType = await vscode.window.showQuickPick(Options[type], {
     canPickMany: false,
     matchOnDescription: false,

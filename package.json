@@ -4,7 +4,7 @@
     "onCommand:extension.JAVASCRIPT"
   ],
   "categories": [
-    "Other"
+    "Snippets"
   ],
   "contributes": {
     "commands": [
@@ -90,5 +90,13 @@
     "vscode:prepublish": "pnpm run compile",
     "watch": "tsc -watch -p ./"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "tags": [
+    "create",
+    "file",
+    "idea",
+    "intellij",
+    "react",
+    "new"
+  ]
 }
