@@ -1,9 +1,38 @@
-# Change Log
+# CHANGELOG
 
-All notable changes to the "new-file" extension will be documented in this file.
+## [1.0.0] - 2025-09-21
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### 🚀 重大更新
+- 版本从 `0.0.1` 正式升级到 `1.0.0`，标志着项目进入稳定可用阶段
 
-## [Unreleased]
+### ✨ 新特性
+- 添加了生动的图片描述，增强用户对功能的直观理解
+  > 示例：在关键功能节点增加了流程图和操作演示图，使复杂功能一目了然
+- 新增详细的 `README.md`，包含：
+  - 项目简介与核心功能
+  - 快速开始指南
+  - 常见问题解答
+  - 贡献指南
 
-- Initial release
+### 🔄 改进
+- 全面优化 API 设计：
+  - 简化了核心方法的调用方式
+  - 提高了参数的灵活性和兼容性
+  - 增加了更清晰的错误提示
+  - 优化了返回值格式，便于后续处理
+
+### 📝 其他
+- 完善了版本管理流程
+- 修复了 `0.0.1` 版本中存在的已知问题
+
+
+## [0.0.1] - 2025-09-20
+
+### 🎉 初始版本
+- 项目基础架构搭建
+- 核心功能初步实现
+- 基本的测试用例
+
+---
+
+`[1.0.0]` 版本相比初始版本，在可用性、可维护性和用户体验上都有了质的飞跃，推荐所有用户升级。
