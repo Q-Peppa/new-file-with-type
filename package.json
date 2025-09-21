@@ -1,4 +1,8 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Q-Peppa/new-file-with-type"
+  },
   "icon": "icons/icon.png",
   "activationEvents": [
     "onCommand:extension.JAVASCRIPT"
