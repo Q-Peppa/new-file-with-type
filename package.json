@@ -90,5 +90,5 @@
     "vscode:prepublish": "pnpm run compile",
     "watch": "tsc -watch -p ./"
   },
-  "version": "0.0.1"
+  "version": "1.0.0"
 }
