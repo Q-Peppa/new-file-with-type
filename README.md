@@ -9,4 +9,4 @@
 
 [💿 Install Via Marketplace](https://marketplace.visualstudio.com/items?itemName=Peppa.new-file-with-type&ssr=false#overview)
 
-![Demo](https://github.com/Q-Peppa/new-file-with-type/blob/main/images/demo.gif)
+![Demo](https://raw.githubusercontent.com/Q-Peppa/new-file-with-type/refs/heads/main/images/demo.gif)
