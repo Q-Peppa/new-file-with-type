@@ -1,0 +1,94 @@
+{
+  "icon": "icons/icon.png",
+  "activationEvents": [
+    "onCommand:extension.JAVASCRIPT"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "JAVASCRIPT",
+        "title": "JavaScript File"
+      },
+      {
+        "command": "TYPESCRIPT",
+        "icon": "$(typescript)",
+        "title": "TypeScript File"
+      },
+      {
+        "command": "STYLE SHEET",
+        "icon": "$(css)",
+        "title": "StyleSheet File"
+      },
+      {
+        "command": "HTML",
+        "icon": "$(html)",
+        "title": "HTML File"
+      }
+    ],
+    "menus": {
+      "%new-file%": [
+        {
+          "command": "JAVASCRIPT",
+          "group": "navigation"
+        },
+        {
+          "command": "TYPESCRIPT",
+          "group": "navigation"
+        },
+        {
+          "command": "STYLE SHEET",
+          "group": "navigation"
+        },
+        {
+          "command": "HTML",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "group": "navigation",
+          "submenu": "%new-file%",
+          "when": "resourceScheme == file"
+        }
+      ]
+    },
+    "submenus": [
+      {
+        "id": "%new-file%",
+        "label": "New File Type"
+      }
+    ]
+  },
+  "description": "💼 Create files with type from file's context menu in VSCode",
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.34.0",
+    "typescript": "^5.9.2"
+  },
+  "displayName": "new-file-with-type",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "license": "MIT",
+  "main": "./out/extension.js",
+  "name": "new-file-with-type",
+  "publisher": "Peppa",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "lint": "eslint src",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "test": "vscode-test",
+    "vscode:prepublish": "pnpm run compile",
+    "watch": "tsc -watch -p ./"
+  },
+  "version": "0.0.1"
+}
