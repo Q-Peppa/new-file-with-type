@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [2.0.0] - 2025-09-22
+
+- 添加了 File Type 配置项 / Add File Type config
+- 添加了 Folder Type 配置项 / Add Folder Type config
+
 ## [1.0.0] - 2025-09-21
 
 ### 🚀 重大更新
