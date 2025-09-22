@@ -13,7 +13,7 @@ const JAVASCRIPT  = [
 const TYPESCRIPT = [
    { label : "TypeScript File", description: "" , id: "ts", iconPath: Uri.file(path.resolve(__filename, "../../../icons/ts.svg")) },
    { label: "TSX File", description: "" , id: "tsx" , iconPath: Uri.file(path.resolve(__filename, "../../../icons/react.svg")) },
-] as const;
+] as F[];
 
 const STYLE_SHEET = [
   {
@@ -46,7 +46,7 @@ const STYLE_SHEET = [
     id: "sass",
     iconPath: Uri.file(path.resolve(__filename, "../../../icons/sass.svg"))
   }
-];
+] as F[];
 
 const HTML = [
   {
@@ -55,11 +55,13 @@ const HTML = [
     id: "html",
     iconPath: Uri.file(path.resolve(__filename, "../../../icons/html.svg"))
   },
-];
+] as F[];
 
 export default {
   JAVASCRIPT: JAVASCRIPT,
   TYPESCRIPT: TYPESCRIPT,
   "STYLE SHEET": STYLE_SHEET,
   HTML: HTML,
-} as const;
+  FILE: [] as F[],
+  FOLDER: [] as F[],
+};

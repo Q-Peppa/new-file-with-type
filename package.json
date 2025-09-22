@@ -13,6 +13,14 @@
   "contributes": {
     "commands": [
       {
+        "command": "FILE",
+        "title": "File"
+      },
+      {
+        "command": "FOLDER",
+        "title": "Folder"
+      },
+      {
         "command": "JAVASCRIPT",
         "title": "JavaScript File"
       },
@@ -34,6 +42,14 @@
     ],
     "menus": {
       "%new-file%": [
+        {
+          "command": "FILE",
+          "group": "navigation"
+        },
+        {
+          "command": "FOLDER",
+          "group": "navigation"
+        },
         {
           "command": "JAVASCRIPT",
           "group": "navigation"
